@@ -1,0 +1,49 @@
+const [productDialog, setProductDialog] = useState(false);
+ const [deleteProductDialog, setDeleteProductDialog] = useState(false);
+
+
+
+    const hideDeleteProductDialog = () => {
+        setDeleteProductDialog(false);
+    }
+
+//
+
+ const confirmDeleteProduct = (product) => {
+        setProduct(product);
+        setDeleteProductDialog(true);
+    }
+//
+    const deleteProduct = () => {
+        let _products = products.filter(val => val.id !== product.id);
+        setProducts(_products);
+        setDeleteProductDialog(false);
+        setProduct(emptyProduct);
+        toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Product Deleted', life: 3000 });
+    }
+
+
+const deleteProductDialogFooter = (
+        <React.Fragment>
+            <Button label="No" icon="pi pi-times" className="p-button-text" onClick={hideDeleteProductDialog} />
+            <Button label="Yes" icon="pi pi-check" className="p-button-text" onClick={deleteProduct} /> //عملية الديليت
+        </React.Fragment>
+    );
+
+
+//
+const actionBodyTemplate = (rowData) => {
+        return (
+            <React.Fragment>
+                
+                <Button icon="pi pi-trash" className="p-button-rounded p-button-warning" onClick={() => confirmDeleteProduct(rowData)} />
+            </React.Fragment>
+        );
+    }
+
+<Dialog visible={deleteProductDialog} style={{ width: '450px' }} header="Confirm" modal footer={deleteProductDialogFooter} onHide={hideDeleteProductDialog}>
+                <div className="confirmation-content">
+                    <i className="pi pi-exclamation-triangle p-mr-3" style={{ fontSize: '2rem'}} />
+                    <span>Are you sure you want to delete ?</span>
+                </div>
+            </Dialog>

@@ -1,0 +1,11 @@
+.social-rticle > a > i {
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.social-rticle > a > i:hover {
+  color: wheat;
+}
+/*# sourceMappingURL=social.css.map */

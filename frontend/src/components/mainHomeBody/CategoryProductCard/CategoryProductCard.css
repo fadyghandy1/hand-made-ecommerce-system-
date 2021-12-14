@@ -1,0 +1,37 @@
+.card-continer {
+  width: 16rem;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-family: monospace;
+  border: solid 2px #807272;
+  border-radius: 20px;
+  height: 20rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.card-continer:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
+.card-continer img {
+  height: 12rem;
+}
+
+.card-continer img:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-price {
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  bottom: 1rem;
+}
+/*# sourceMappingURL=CategoryProductCard.css.map */

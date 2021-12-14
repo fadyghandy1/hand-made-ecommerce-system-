@@ -1,0 +1,40 @@
+a{
+    text-decoration: none;
+}
+.sidebar-shape{
+    width: 10px;
+    font-size: 10px;
+}
+.sidebar-continer a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    
+}
+.sidebar-continer a:hover{
+  
+    color: rgb(160, 93, 93);
+   
+    transition: 0.3s;
+    
+}
+
+li{
+    color:#fff
+}
+
+.button-sidebar{
+    font-size:20px;
+    color: #000;
+    position: absolute;
+    background-color: blanchedalmond;
+    left: -80px;
+    z-index: 3;
+  
+  }
+  
+  
+

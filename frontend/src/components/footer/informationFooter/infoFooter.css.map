@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,YAAY,CAAA;EACR,OAAO,EAAE,QAAQ;CACpB",
+    "sources": [
+        "infoFooter.scss"
+    ],
+    "names": [],
+    "file": "infoFooter.css"
+}

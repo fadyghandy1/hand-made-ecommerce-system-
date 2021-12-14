@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:700");
+* {
+
+}
+
+.body-aboutus {
+  background: url("https://image.ibb.co/mJ9tLa/image.png");
+  background-color: #212121;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  height: 39rem;
+  
+}
+
+.h1-aboutus {
+  color: whitesmoke;
+  font-family: "Exo 2", sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 30px;
+  
+}
+
+.p-aboutus {
+  max-width: 700px;
+  min-height: 200px;
+  padding: 0;
+  color: whitesmoke;
+  font-family: OpenSans;
+  font-size: 22px;
+  font-weight: 300;
+  /* line-height: 22px; */
+  text-align: justify;
+  margin: 30px auto ;
+  
+
+}
+
+
+.square-aboutus {
+  height: 60px;
+  width: 60px;
+  border: 1px dashed white;
+  margin: 0 0 0 55px;
+  /*   padding: 1px; resize squares */
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  transform: rotateZ(44deg);
+}
+
+.square-aboutus:hover {
+  background-color: rgba(27, 182, 239, 0.2);
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.square-aboutus .icons {
+  position: absolute;
+  transform: rotateZ(-44deg);
+  margin: 20px 0 0px 21px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-dribbbler,
+.fa-youtube,
+.fa-dribbble {
+  width: 20px;
+  height: 22px;
+  color: white;
+  font-family: FontAwesome;
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+
+.square-aboutus:hover .fa-facebook {
+  color: rgba(59, 89, 152, 1);
+}
+
+.square-aboutus:hover .fa-twitter {
+  color: rgba(27, 182, 239, 1);
+}
+
+.square-aboutus:hover .fa-dribbble {
+  color: rgba(199, 59, 111, 1);
+}
+
+.square-aboutus:hover .fa-youtube {
+  color: rgba(229, 45, 39, 1);
+}
+.logo-aboutus {
+  margin: 1em;
+  position: fixed;
+  bottom: -72px;
+  z-index: 99999999999;
+  right: 0;
+}
+

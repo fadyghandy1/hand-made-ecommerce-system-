@@ -1,0 +1,72 @@
+$mainColor :lightskyblue;
+
+.navbar-background{
+    background-color: #D7E6F5;
+}
+.nav-item{
+
+    .nav-links{
+        font-weight: bold;
+        background: linear-gradient(to left, #D7E6F5 50%, $mainColor 50%) right;
+        background-size: 200%;
+        color: black;
+       
+
+    
+        &:hover{
+            color: white !important;
+            background-position: left;
+            transition: all 0.5s ;
+            border-radius: 8px;
+                   
+    
+            
+        }
+    
+
+    }
+    
+ 
+}
+
+.navBar-search-button{
+    background-color: white;
+    border: 1px solid $mainColor;
+    border-radius: 8px;
+
+   
+    &:hover{
+        background-color: $mainColor;
+    }
+    
+
+}
+
+.navBar-drop-button{
+    border: none !important;
+    font-weight: bold !important;
+    color: #61686E !important ;
+    background-color: transparent !important;
+    &:hover{
+        color: white !important;
+
+    }
+
+}
+.form-control{
+    border: $mainColor solid 1px !important;
+    // background-color: #eee !important;
+    
+    &:focus{
+        // outline: $mainColor solid 5px !important;
+        // border: $mainColor solid 1px !important;
+        // box-shadow: none !important;
+
+    }
+    
+
+}
+
+
+
+
